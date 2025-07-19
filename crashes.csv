@@ -1,0 +1,37 @@
+year,title,date,location,fatalities,cause,timeline,cvr
+1908,Wright Flyer Crash,"September 17, 1908","Fort Myer, Virginia, USA",1,Propeller failure,timeline/wright-1908.html,transcript/tr_wright-1908.html
+1912,Douai Mid-Air Collision,"June 19, 1912","Douai, France",2,Collision during maneuvers,timeline/douai-1912.html,transcript/tr_douai-1912.html
+1933,United Airlines Boeing 247,"October 10, 1933","Chesterton, Indiana, USA",7,Onboard bombing,timeline/united-247.html,transcript/tr_united-247.html
+1955,United Airlines Flight 629,"November 1, 1955","Longmont, Colorado, USA",44,Onboard bombing,timeline/united-629.html,transcript/tr_united-629.html
+1974,Turkish Airlines Flight 981,"March 3, 1974","Ermenonville Forest, France",346,Cargo door failure,timeline/thy-981.html,transcript/tr_thy-981.html
+1977,Tenerife Airport Disaster,"March 27, 1977","Los Rodeos Airport, Tenerife",583,Miscommunication in fog,timeline/tenerife-1977.html,transcript/tr_tenerife-1977.html
+1980,Saudia Flight 163,"August 19, 1980","Riyadh, Saudi Arabia",301,In-flight fire,timeline/saudia-163.html,transcript/tr_saudia-163.html
+1985,Air India Flight 182,"June 23, 1985","Atlantic Ocean, off Ireland",329,Bombing,timeline/airindia-182.html,transcript/tr_airindia-182.html
+1985,Japan Airlines Flight 123,"August 12, 1985","Mount Takamagahara, Japan",520,Bulkhead failure,timeline/jal-123.html,transcript/tr_jal-123.html
+1987,Northwest Airlines Flight 255,"August 16, 1987","Detroit, Michigan, USA",154,Takeoff stall due to configuration error,timeline/nwa255.html,transcript/tr_nwa255.html
+1988,Pan Am Flight 103,"December 21, 1988","Lockerbie, Scotland",270,Bombing,timeline/panam-103.html,transcript/tr_panam-103.html
+1989,United Airlines Flight 232,"July 19, 1989","Sioux City, Iowa, USA",111,Engine failure and loss of hydraulics,timeline/united-232.html,transcript/tr_united-232.html
+1990,Avianca Flight 52,"January 25, 1990","Long Island, New York, USA",73,Fuel exhaustion due to miscommunication,timeline/avianca-52.html,transcript/tr_avianca-52.html
+1994,USAir Flight 427,"September 8, 1994","Pittsburgh, Pennsylvania, USA",132,Rudder malfunction,timeline/usair-427.html,transcript/tr_usair-427.html
+1996,Charkhi Dadri Collision,"November 12, 1996","Near New Delhi, India",349,Altitude miscommunication,timeline/charkhi-dadri.html,transcript/tr_charkhi-dadri.html
+1997,Korean Air Flight 801,"August 6, 1997","Guam",228,Crashed on approach in heavy rain,timeline/korean-801.html,transcript/tr_korean-801.html
+1997,SilkAir Flight 185,"December 19, 1997","Palembang, Indonesia",104,Intentional dive; disputed cause,timeline/silkair-185.html,transcript/tr_silkair-185.html
+2000,Alaska Airlines Flight 261,"January 31, 2000","Pacific Ocean, off California",88,Stabilizer failure,timeline/alaska-261.html,transcript/tr_alaska-261.html
+2001,9/11 Attacks,"September 11, 2001","New York City, USA","~2657",Terrorist hijackings,timeline/911.html,transcript/tr_911.html
+2003,IRGC Il-76 Crash,"February 19, 2003","Near Kerman, Iran",275,Mountain impact,timeline/il76-2003.html,transcript/tr_il76-2003.html
+2009,Air France Flight 447,"June 1, 2009","Atlantic Ocean",228,Pitot tube icing and pilot error,timeline/af447.html,transcript/tr_af447.html
+2010,Air India Express Flight 812,"May 22, 2010","Mangalore, India",158,Runway overshoot,timeline/aie-812.html,transcript/tr_aie-812.html
+2013,Tatarstan Airlines Flight 363,"November 17, 2013","Kazan, Russia",50,Pilot error during go-around,timeline/tatarstan-363.html,transcript/tr_tatarstan-363.html
+2014,Malaysia Airlines Flight MH370,"March 8, 2014","Indian Ocean",239,Unknown,timeline/mh370.html,transcript/tr_mh370.html
+2014,Malaysia Airlines Flight 17,"July 17, 2014","Eastern Ukraine",298,Missile strike,timeline/mh17.html,transcript/tr_mh17.html
+2015,Metrojet Flight 9268,"October 31, 2015","Sinai, Egypt",224,Bombing,timeline/metrojet-9268.html,transcript/tr_metrojet-9268.html
+2020,PIA Flight 8303,"May 22, 2020","Karachi, Pakistan",97,Gear failure,timeline/pia-8303.html,transcript/tr_pia-8303.html
+2020,Air India Express Flight 1344,"August 7, 2020","Kozhikode, India",21,Runway overshoot in rain,timeline/aie-1344.html,transcript/tr_aie-1344.html
+2021,Sriwijaya Air Flight SJ182,"January 9, 2021","Jakarta, Indonesia",62,Loss of control during climb,timeline/sj182.html,transcript/tr_sj182.html
+2022,China Eastern Flight MU5735,"March 21, 2022","Guangxi, China",132,Vertical dive; under investigation,timeline/mu5735.html,transcript/tr_mu5735.html
+2023,Yeti Airlines Flight 691,"January 15, 2023","Pokhara, Nepal",72,Crashed during approach,timeline/yeti691.html,transcript/tr_yeti691.html
+2024,Bering Air Flight 8E445,"October 18, 2024","Nome, Alaska, USA",10,Disappeared over sea ice,timeline/bering445.html,transcript/tr_bering445.html
+2025,American Airlines & Black Hawk Collision,"February 2, 2025","Washington DC, USA",67,Mid-air collision,timeline/blackhawk-2025.html,transcript/tr_blackhawk-2025.html
+2025,Delta Airlines CRJ Accident,"April 12, 2025","Toronto, Canada","0 (21 injured)",Jet flipped during landing,timeline/delta-crj-2025.html,transcript/tr_delta-crj-2025.html
+2025,Eagle Air Crash,"May 28, 2025","South Sudan",20,Crash in remote region,timeline/eagleair-2025.html,transcript/tr_eagleair-2025.html
+2025,Air India Flight 171,"June 12, 2025","Ahmedabad, India",260,Dual engine failure and loss of control,timeline/airindia-171.html,transcript/tr_airindia171.html
