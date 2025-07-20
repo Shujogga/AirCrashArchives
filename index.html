@@ -4,25 +4,29 @@
   <!-- Google Tag Manager -->
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-    f.parentNode.insertBefore(j,f);
+      new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','G-VSXP6DP1CQ');
   </script>
   <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8">
-  <meta name="keywords"
-        content="aviation archive, air crash database, flight incident history, CVR audio archive, aviation accident timelines, cockpit voice recorder clips">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="aviation archive, air crash database, flight incident history, CVR audio archive, aviation accident timelines, cockpit voice recorder clips">
   <title>Air Crash Timeline Archive</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 
   <style>
-    /* Base Styles */
+    /* 1. Make width calculations include padding/borders */
+    html { box-sizing: border-box; }
+    *, *::before, *::after { box-sizing: inherit; }
+
+    /* 2. Base Styles */
     body {
       font-family: 'Roboto', sans-serif;
       margin: 40px;
@@ -48,13 +52,15 @@
       margin: 50px 0 20px;
     }
 
-    /* Navigation Bar (navy blue) */
+    /* 3. Navigation Bar */
     .main-nav {
-      background-color: #001f3f;  /* Navy blue */
+      background-color: #001f3f;      /* navy blue */
       position: sticky;
       top: 0;
       z-index: 1000;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 12px 0;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
@@ -69,7 +75,6 @@
     .nav-links {
       display: flex;
       gap: 20px;
-      justify-content: center;
       list-style: none;
       margin: 0;
       padding: 0;
@@ -96,7 +101,7 @@
       transform: translateY(-2px);
     }
 
-    /* Content Styles */
+    /* 4. Timeline Entries */
     .year-header {
       font-size: 1.6em;
       font-weight: 700;
@@ -142,7 +147,7 @@
       color: #228b22;
     }
 
-    /* Search Box */
+    /* 5. Search Box */
     .search-box {
       max-width: 600px;
       margin: 0 auto 40px;
@@ -170,41 +175,60 @@
       background-color: #27465d;
     }
 
-    /* Responsive Styles */
+    /* 6. Mobile Responsiveness */
     @media (max-width: 768px) {
+      /* collapse side margins, use padding */
       body {
-        margin: 20px;
+        margin: 0;
+        padding: 0 10px;
       }
+
+      /* shrink nav bar padding */
+      .main-nav {
+        padding: 8px 0;
+      }
+
+      /* show hamburger toggle */
       .menu-toggle {
         display: block;
       }
       .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #001f3f;  /* Navy blue dropdown */
-        padding: 10px 0;
+        background-color: #001f3f;
+        padding: 8px 0;
       }
       .nav-links.show {
         display: flex;
       }
+      /* full-width, smaller nav buttons */
       .nav-links a {
-        width: 80%;
-        margin: 12px auto;
-        text-align: center;
+        padding: 10px 16px;
+        font-size: 1.1em;
+        width: 100%;
+        margin: 6px 0;
+        border-radius: 6px;
       }
-      h1 {
-        font-size: 2.2em;
-        padding: 18px 0;
-      }
+
+      /* force search-box to fit */
       .search-box {
+        width: 100%;
+        margin: 0 auto 20px;
         flex-direction: column;
         gap: 10px;
       }
       .search-box input,
       .search-box button {
         width: 100%;
-        border-radius: 5px;
       }
+
+      /* smaller heading */
+      h1 {
+        font-size: 2em;
+        padding: 16px 0;
+      }
+
+      /* tighter entry padding */
       .crash-entry {
         padding: 16px;
       }
@@ -218,17 +242,17 @@
     <iframe src="https://www.googletagmanager.com/ns.html?id=G-VSXP6DP1CQ"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <!-- End Google Tag Manager -->
 
   <!-- Navigation Menu -->
-<nav class="main-nav">
-  <div class="menu-toggle">☰ Menu</div>
-  <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/navigation/about.html">About</a></li>
-    <li><a href="/navigation/donate.html">Donate for the Cause</a></li>
-  </ul>
-</nav>>
+  <nav class="main-nav">
+    <div class="menu-toggle">☰ Menu</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/navigation/about.html">About</a></li>
+      <li><a href="/navigation/donate.html">Donate for the Cause</a></li>
+    </ul>
+  </nav>
 
   <h1>Air Crash Timeline Archive</h1>
 
@@ -246,15 +270,17 @@
         document.querySelector('.nav-links').classList.toggle('show');
       });
 
-    // Load CSV and render timeline
+    // Load and render CSV data
     fetch('crashes.csv')
       .then(r => r.text())
       .then(csv => {
         const entries = Papa.parse(csv, { header: true }).data;
         const timelineEl = document.getElementById('timeline');
+
         entries.forEach((e, i) => {
           if (!e.year || !e.title) return;
-          const html = `
+          const section = document.createElement('div');
+          section.innerHTML = `
             <hr>
             <div class="year-header">${e.year}</div>
             <div class="crash-entry">
@@ -273,21 +299,19 @@
                   : ''}
               </div>
             </div>`;
-          const div = document.createElement('div');
-          div.innerHTML = html;
-          timelineEl.appendChild(div);
+          timelineEl.appendChild(section);
         });
       });
 
-    // CVR audio control
-    document.addEventListener('click', ev => {
-      if (ev.target.matches('.cvr-icon')) {
-        const audio = document.getElementById(ev.target.dataset.audioId);
+    // Play/pause CVR audio
+    document.addEventListener('click', e => {
+      if (e.target.matches('.cvr-icon')) {
+        const audio = document.getElementById(e.target.dataset.audioId);
         if (audio) audio.paused ? audio.play() : audio.pause();
       }
     });
 
-    // Search filter
+    // Filter search
     function filterEntries() {
       const q = document.getElementById('searchInput').value.toLowerCase();
       document.querySelectorAll('.crash-entry').forEach(el => {
