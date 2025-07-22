@@ -1,215 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});
-    var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-    j.async = true;
-    j.src = 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
-    f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','G-VSXP6DP1CQ');
-  </script>
-  <!-- End Google Tag Manager -->
-
+  <link rel="icon" href="/flight.ico" type="image/x-icon"/>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="air crash archive, donate, support, QR code" />
+  <meta name="keywords" content="air crash archive, donate, support, contribution, funding" />
   <title>Donate – Air Crash Timeline Archive</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet" />
-
-  <style>
-    /* Base */
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 40px;
-      background-color: #e8ecf1;
-      color: #2a2a2a;
-      line-height: 1.6;
-    }
-
-    /* Sticky Navy Nav */
-    .main-nav {
-      background-color: #001f3f;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      text-align: center;
-      padding: 12px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    .menu-toggle {
-      display: none;
-      font-size: 1.4em;
-      font-weight: 700;
-      padding: 12px;
-      color: #ffffff;
-      cursor: pointer;
-    }
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    .nav-links a {
-      display: inline-block;
-      padding: 18px 36px;
-      font-size: 1.3em;
-      background-color: #ffffff;
-      color: #1c2f41;
-      font-weight: 700;
-      text-decoration: none;
-      border: 2px solid #1c2f41;
-      border-radius: 10px;
-      transition: all 0.2s ease-in-out;
-    }
-    .nav-links a:hover {
-      background-color: #1c2f41;
-      color: #ffffff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      transform: translateY(-2px);
-    }
-
-    /* Page Header */
-    h1 {
-      text-align: center;
-      font-weight: 700;
-      font-size: 2.5em;
-      color: #ffffff;
-      background-color: #1c2f41;
-      padding: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin: 30px 0;
-    }
-
-    /* Content Container */
-    .content {
-      max-width: 800px;
-      margin: 0 auto 40px;
-      background-color: #ffffff;
-      padding: 24px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .content p {
-      margin: 16px 0;
-      font-size: 1em;
-    }
-    .content h2 {
-      font-size: 1.6em;
-      color: #1c2f41;
-      margin-top: 24px;
-    }
-
-    /* Donate Section */
-    .donate-section {
-      text-align: center;
-      margin: 30px 0;
-    }
-    .donate-section img {
-      max-width: 250px;
-      width: 80%;
-      height: auto;
-      border: 4px solid #1c2f41;
-      border-radius: 8px;
-      margin-top: 16px;
-    }
-    .donate-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 28px;
-      background-color: #3399cc;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 6px;
-      transition: background-color 0.2s ease;
-    }
-    .donate-button:hover {
-      background-color: #1c2f41;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      body { margin: 20px; }
-      .menu-toggle { display: block; }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #001f3f;
-        padding: 10px 0;
-      }
-      .nav-links.show { display: flex; }
-      .nav-links a {
-        width: 80%;
-        margin: 12px auto;
-        text-align: center;
-      }
-      h1 { font-size: 2em; padding: 16px 0; }
-      .content { padding: 16px; }
-      .donate-section img { max-width: 200px; }
-    }
-  </style>
+  <!-- Fonts & shared CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=G-VSXP6DP1CQ"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager -->
+  <!-- Navigation bar placeholder -->
+  <div id="nav-placeholder"></div>
 
-  <!-- Navigation Menu -->
-  <nav class="main-nav">
-  <div class="menu-toggle">☰ Menu</div>
-  <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/navigation/about.html">About</a></li>
-    <li><a href="/navigation/donate.html">Donate for the Cause</a></li>
-  </ul>
-</nav>
+  <!-- Main content -->
+  <main class="content">
+    <section>
+      <h2>Your Support Makes a Difference</h2>
+      <p>
+        This project is built by me voluntarily. Your donation helps keep the servers
+        online, expand the archive, and improve features like CVR audio playback and
+        timeline search.
+      </p>
+    </section>
 
-  <h1>Donate for the Cause</h1>
+    <section class="qr-placeholder">
+      <h2>Scan to Contribute</h2>
+      <img src="/qr-code.png" alt="Scan this QR code to donate" />
+    </section>
 
-  <div class="content">
-    <h2>Your Support Makes a Difference</h2>
-    <p>
-      This project is run by aviation enthusiasts and researchers who volunteer
-      their time to preserve the history of air safety. Your donation helps us
-      maintain servers, process CVR audio, and expand our archive with new findings.
-    </p>
+    <section>
+      <h2>Other Ways to Support</h2>
+      <p>You can also donate securely using PayPal:</p>
+      <a
+        href="https://paypal.me/shujogga"
+        class="donate-button"
+        target="_blank"
+        rel="noopener"
+      >
+        Donate via PayPal
+      </a>
+    </section>
+  </main>
 
-    <div class="donate-section">
-      <h2>Scan to Donate</h2>
-      <!-- Replace `qr-code.png` with your actual QR image -->
-      <img src="qr-code.png" alt="QR code to support the Air Crash Timeline Archive" />
-    </div>
-
-    <h2>Other Ways to Give</h2>
-    <p>
-      If you prefer, you can also support us via PayPal or credit card:
-    </p>
-    <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_BUTTON_ID"
-       class="donate-button" target="_blank">
-      Donate via PayPal
-    </a>
-  </div>
-
+  <!-- Inject shared nav, set title, and wire hamburger toggle -->
   <script>
-    // Mobile nav toggle
-    document.querySelector('.menu-toggle')
-      .addEventListener('click', () => {
-        document.querySelector('.nav-links').classList.toggle('show');
-      });
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('/navigation/nav.html')
+        .then(res => {
+          if (!res.ok) throw new Error('Network response was not ok');
+          return res.text();
+        })
+        .then(html => {
+          // 1) Inject nav
+          document.getElementById('nav-placeholder').innerHTML = html;
+
+          // 2) Update center title
+          const centerTitle = document.getElementById('nav-page-title');
+          if (centerTitle) {
+            centerTitle.textContent = document.title.split(' – ')[0];
+          }
+
+          // 3) Wire up hamburger toggle
+          const btn  = document.querySelector('.menu-toggle');
+          const menu = document.querySelector('.nav-links');
+          if (btn && menu) {
+            btn.addEventListener('click', () => {
+              menu.classList.toggle('show');
+            });
+          }
+        })
+        .catch(err => console.error('❌ nav load error:', err));
+    });
   </script>
 </body>
 </html>

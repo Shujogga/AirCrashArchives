@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Shujogga/AirCrashArchives#readme",
   "description": "",
   "dependencies": {
+    "glob": "^11.0.3",
     "papaparse": "^5.5.3"
   }
 }

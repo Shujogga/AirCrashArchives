@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="/flight.ico" type="image/x-icon" />
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -11,81 +12,38 @@ f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','G-VSXP6D
   <meta charset="UTF-8">
   <title>United Airlines Boeing 247 Crash – Detailed Timeline</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 40px;
-      background-color: #e8ecf1;
-      color: #2a2a2a;
-      line-height: 1.6;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2.8em;
-      color: #ffffff;
-      background-color: #1c2f41;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-    .timeline-container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      padding: 30px;
-      border-left: 5px solid #3399cc;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      border-radius: 8px;
-    }
-    .section-label {
-      margin-top: 40px;
-      font-size: 1.3em;
-      font-weight: bold;
-      color: #3399cc;
-      border-bottom: 2px solid #ccd9e2;
-      padding-bottom: 5px;
-    }
-    .event {
-      margin-bottom: 25px;
-    }
-    .event time {
-      display: block;
-      font-weight: bold;
-      color: #1c2f41;
-      margin-bottom: 5px;
-    }
-    .event p {
-      margin: 0;
-      font-size: 1em;
-      color: #2a2a2a;
-    }
-    .note {
-      font-style: italic;
-      font-size: 0.95em;
-      color: #555;
-      margin-top: 30px;
-    }
-    .back-link {
-      display: block;
-      text-align: center;
-      margin-top: 40px;
-      font-size: 1em;
-      text-decoration: none;
-      color: #3182ce;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  
+
+  
+  
+
+  
+
+
+  
+<link rel="stylesheet" href="/css/styles.css">
+
+  <script>
+    fetch('/navigation/nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('nav-placeholder').innerHTML = html;
+        const centerTitle = document.getElementById('nav-page-title');
+        if (centerTitle) {
+          centerTitle.textContent = document.title.split(' – ')[0];
+        }
+      })
+      .catch(err => console.error('❌ nav load error:', err));
+  </script>
 </head>
 <body>
+  <div id="nav-placeholder"></div>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-VSXP6DP1CQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <h1>United Airlines Boeing 247 Crash – Detailed Timeline</h1>
+  <h2>United Airlines Boeing 247 Crash – Detailed Timeline</h2>
 
   <div class="timeline-container">
 

@@ -1,0 +1,24 @@
+// inject-favicon.js
+// Usage: node inject-favicon.js
+
+const fs   = require('fs');
+const glob = require('glob');
+const ICON = '<link rel="icon" href="/flight.ico" type="image/x-icon" />';
+
+glob('pages/**/*.html', (err, files) => {
+  if (err) throw err;
+
+  files.forEach(file => {
+    let html = fs.readFileSync(file, 'utf8');
+
+    // only inject once
+    if (!/rel=["']icon["']/.test(html)) {
+      html = html.replace(
+        /<head([^>]*)>/i,
+        `<head$1>\n  ${ICON}`
+      );
+      fs.writeFileSync(file, html, 'utf8');
+      console.log(`✅ Injected favicon into ${file}`);
+    }
+  });
+});
