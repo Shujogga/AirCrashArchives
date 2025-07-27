@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>MH370 Latest Updates – Air Crash Timeline Archive</title>
+  <meta name="description"
+        content="Top 10 latest verified resources on MH370: official reports, interactive maps, credible analysis." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/flight.ico" type="image/x-icon" />
+
+  <!-- Google Fonts & Main CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <style>
+    .article-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .article-box {
+      display: block;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+
+    .article-box:hover,
+    .article-box:focus {
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .article-box h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .article-box p {
+      margin: 0;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .back-link {
+      margin-top: 2rem;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation placeholder -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <h2>MH370 Latest Updates</h2>
+
+<ul class="article-list">
+  <li class="article-item">
+    <a class="article-box"
+       href="https://www.express.co.uk/news/world/2027641/mh370-precise-location-new-data"
+       target="_blank" rel="noopener noreferrer">
+      <h3>MH370 ‘Breakthrough’ as New Data Shows ‘Precise Location’</h3>
+      <p>Express UK reports high-resolution sonar and seabed anomalies that may finally pinpoint MH370’s final resting place.</p>
+    </a>
+  </li>
+
+  <li class="article-item">
+    <a class="article-box"
+       href="https://www.newsweek.com/mh370-signal-detected-map-1914464"
+       target="_blank" rel="noopener noreferrer">
+      <h3>Map Shows Where MH370 Signal Detected, Raising Hopes of Breakthrough</h3>
+      <p>Newsweek visualizes newly detected acoustic signals that could narrow the search area for MH370.</p>
+    </a>
+  </li>
+
+  <li class="article-item">
+    <a class="article-box"
+       href="https://www.ndtv.com/world-news/us-company-relaunches-search-for-missing-flight-mh370-identifies-4-hotspots-7807895"
+       target="_blank" rel="noopener noreferrer">
+      <h3>US Company Relaunches Search for MH370, Identifies 4 ‘Hotspots’</h3>
+      <p>NDTV covers a private firm’s renewed underwater search effort, highlighting four potential crash zones.</p>
+    </a>
+  </li>
+
+  <li class="article-item">
+    <a class="article-box"
+       href="https://mh370.radiantphysics.com/2025/03/31/update-on-the-search-for-mh370/"
+       target="_blank" rel="noopener noreferrer">
+      <h3>Update on the Search for MH370</h3>
+      <p>Radiant Physics engineers detail the latest drift-modeling refinements and planned sonar survey operations.</p>
+    </a>
+  </li>
+
+  <li class="article-item">
+    <a class="article-box"
+       href="https://www.nst.com.my/news/nation/2025/03/1185326/us-australia-aiding-renewed-mh370-search"
+       target="_blank" rel="noopener noreferrer">
+      <h3>US, Australia Aiding Renewed MH370 Search</h3>
+      <p>New Straits Times reports on bilateral support and resource sharing for the resumed deep-sea exploration.</p>
+    </a>
+  </li>
+
+  <li class="article-item">
+    <a class="article-box"
+       href="https://en.as.com/latest_news/flight-mh370-vanished-over-a-decade-ago-but-we-may-have-the-key-to-unlocking-the-mystery-n/"
+       target="_blank" rel="noopener noreferrer">
+      <h3>Flight MH370 Vanished Over a Decade Ago – But We May Have the Key to Unlocking the Mystery</h3>
+      <p>AS.com examines emerging data-analysis techniques that could finally solve the decade-long disappearance.</p>
+    </a>
+  </li>
+
+  <li class="article-item">
+    <a class="article-box"
+       href="https://www.bbc.com/news/world-asia-26503141"
+       target="_blank" rel="noopener noreferrer">
+      <h3>BBC News Q&A: What Happened to Flight MH370?</h3>
+      <p>BBC’s concise explainer walks through the flight’s timeline, key satellite pings, and remaining unanswered questions.</p>
+    </a>
+  </li>
+
+  <li class="article-item">
+    <a class="article-box"
+       href="https://edition.cnn.com/interactive/2014/04/world/malaysia-flight-370-timeline/full.html"
+       target="_blank" rel="noopener noreferrer">
+      <h3>CNN Interactive Timeline of MH370</h3>
+      <p>Multimedia timeline tracing MH370’s last known positions, satellite arcs, and search milestones across the Indian Ocean.</p>
+    </a>
+  </li>
+</ul>
+
+    <p class="back-link">
+      <a href="/navigation/latest-news-on-unsolved-cases.html">&larr; Back to Latest News</a>
+    </p>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('/navigation/nav.html')
+        .then(res => res.text())
+        .then(html => {
+          // Inject the nav
+          document.getElementById('nav-placeholder').innerHTML = html;
+
+          // Inject page title into nav-center
+          const fullTitle = document.title.trim();
+          const shortTitle = fullTitle.includes(' – ')
+            ? fullTitle.split(' – ')[0]
+            : fullTitle;
+          const titleEl = document.getElementById('nav-page-title');
+          if (titleEl) titleEl.textContent = shortTitle;
+
+          // Highlight “Latest News on Unsolved Cases” parent link
+          const parentHref = '/navigation/latest news on unsolved cases/';
+          document.querySelectorAll('.nav-links a').forEach(link => {
+            if (link.getAttribute('href') === parentHref) {
+              link.classList.add('active');
+            }
+          });
+        })
+        .catch(err => console.error('❌ nav load error:', err));
+    });
+  </script>
+</body>
+</html>

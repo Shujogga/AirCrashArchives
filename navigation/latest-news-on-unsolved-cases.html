@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Latest News on Unsolved Cases – Air Crash Timeline Archive</title>
+  <meta name="description"
+        content="Verified updates on MH370 and AI-171, coming soon in timeline format." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/flight.ico" type="image/x-icon" />
+
+  <!-- Google Fonts & Main CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Inline CSS for scrollable boxes -->
+  <style>
+    .cases-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+    .case-box {
+      flex: 0 0 220px;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: inherit;
+    }
+    .case-box h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+    }
+    .case-box p {
+      margin: 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .cases-container::-webkit-scrollbar {
+      height: 6px;
+    }
+    .cases-container::-webkit-scrollbar-thumb {
+      background: rgba(0,0,0,0.2);
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Placeholder -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <h2>Latest News on Unsolved Cases</h2>
+
+    <div class="cases-container">
+      <a
+        href="/navigation/latest news on unsolved cases/mh370/mh370-latest.html"
+        class="case-box"
+      >
+        <h3>MH370</h3>
+        <p>Latest verified developments on Malaysia Airlines Flight MH370.</p>
+      </a>
+
+      <a
+        href="/navigation/latest news on unsolved cases/ai171/ai171-latest.html"
+        class="case-box"
+      >
+        <h3>AI-171</h3>
+        <p>Latest verified developments on Air India Flight AI-171.</p>
+      </a>
+    </div>
+
+    <p class="back-link">
+      <a href="/index.html">&larr; Back to Home</a>
+    </p>
+  </main>
+
+  <!-- Navigation loader script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      fetch('/navigation/nav.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('nav-placeholder').innerHTML = html;
+          const active = document.querySelector(
+            'a[href$="latest-news-on-unsolved-cases.html"]'
+          );
+          if (active) active.classList.add('active');
+        })
+        .catch(console.error);
+    });
+  </script>
+</body>
+</html>

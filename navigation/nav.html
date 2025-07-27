@@ -2,28 +2,33 @@
   <!-- Left: Logo / Site Name -->
   <div class="nav-left">
     <a href="/" class="nav-logo">
-  <img src="/Logo_2025.png" alt="Air Crash Archive Logo" />
-</a>
+      <img src="/Logo_2025.png" alt="Air Crash Archive Logo" />
+    </a>
   </div>
 
   <!-- Center: Page Title (injected dynamically) -->
   <div class="nav-center">
-    <span class="nav-page-title" id="nav-page-title">...</span>
+    <span class="nav-page-title" id="nav-page-title">…</span>
   </div>
 
   <!-- Right: Menu links -->
   <div class="nav-right">
-   <button class="menu-toggle" aria-label="Menu">☰</button>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
     <ul class="nav-links">
-  <li><a href="/">Home</a></li>
-  <li><a href="/navigation/about.html">About</a></li>
-  <li><a href="/navigation/donate.html">Donate</a></li>
-</ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/navigation/about.html">About</a></li>
+      <li><a href="/navigation/donate.html">Donate</a></li>
+      <li>
+        <a href="/navigation/latest news on unsolved cases/latest-news-on-unsolved-cases.html">
+          Latest News on Unsolved Cases
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
 
 <script>
-  // Toggle menu for small screens
+  // Hamburger toggle for small screens
   document.addEventListener('click', e => {
     if (e.target.matches('.menu-toggle')) {
       document.querySelector('.nav-links')?.classList.toggle('show');

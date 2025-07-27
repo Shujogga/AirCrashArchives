@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Air India Flight 182 – CVR Transcript</title>
-  <meta name="description"
-        content="Cockpit voice recorder transcript of Air India Flight 182, which was destroyed by a terrorist bombing on June 23, 1985, over the Atlantic Ocean near Ireland.">
+  <title>Air India Express Flight 1344 – CVR Transcript</title>
+  <meta
+    name="description"
+    content="Cockpit voice recorder transcript of Air India Express Flight 1344, which crashed on August 7, 2020, at Kozhikode Airport due to runway overrun in poor weather."
+  />
 
   <!-- Favicons -->
   <link rel="icon" href="/flight.ico" type="image/x-icon">
@@ -29,15 +31,14 @@
   />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <!-- Google Tag Manager (NoScript) -->
+  <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe
       src="https://www.googletagmanager.com/ns.html?id=G-VSXP6DP1CQ"
-      height="0"
-      width="0"
+      height="0" width="0"
       style="display:none;visibility:hidden"
     ></iframe>
   </noscript>
@@ -46,74 +47,75 @@
   <div id="nav-placeholder"></div>
 
   <main class="content">
-    <h2>Air India Flight 182 – CVR Transcript</h2>
+    <h2>Air India Express Flight 1344 – CVR Transcript</h2>
 
     <section class="meta">
-      <p><strong>Date:</strong> June 23, 1985</p>
-      <p><strong>Aircraft:</strong> Boeing 747-237B (VT-EFO)</p>
-      <p><strong>Operator:</strong> Air India</p>
-      <p><strong>Fatalities:</strong> 329 (all onboard)</p>
-      <p><strong>Cause:</strong> Terrorist bombing by Sikh extremists; bomb detonated in cargo hold</p>
+      <p><strong>Date:</strong> August 7, 2020</p>
+      <p><strong>Aircraft:</strong> Boeing 737-8HG (VT-AXH)</p>
+      <p><strong>Operator:</strong> Air India Express</p>
+      <p><strong>Fatalities:</strong> 21 (including both pilots)</p>
+      <p>
+        <strong>Cause:</strong> Runway overrun in poor weather; unstabilized
+        approach and pilot error
+      </p>
     </section>
 
     <section class="transcript">
       <pre>
-[06:43:42] AI-182: And Air India 182 position.
-[06:43:56] AI-182: Shanwick position is 51N 20W at 0643, level 310, estimate 51N 15W at 0704.
-[06:44:15] Shanwick: Roger, select position after 15 minutes please.
-[06:46:48] AI-182: After that we have 51N 8W, and thereafter Bunty.
-[07:00:30] COP: Do me a small favour.
-[07:00:32] COP: Ekdam end pe, 54 seat pe, a boy is sitting there. Inder Thakur knows. He just wanted to have a look in the cockpit.
-[07:05:08] COP: Everybody is having that whiskey and beer.
-[07:06:39] AI-182: Shanwick AI-182. Good morning.
-[07:09:58] AI-182: Right sir, squawking 2005.
-[07:13:44] FE: London operation ko bolna.
-[07:14:01] [Sound] — end of recording
+[19:36:50] CAM-1: Runway in sight.
+[19:36:52] CAM-2: Speed 165 knots. Flaps 30.
+[19:36:55] GPWS: Sink rate.
+[19:36:57] CAM-1: We’re high. Reduce rate.
+[19:37:00] CAM-2: Touchdown zone ahead.
+[19:37:05] CAM: [sound of autopilot disconnect]
+[19:37:08] CAM-1: Wiper’s gone. What a day for the wiper to go.
+[19:37:12] CAM-2: We’re crossing taxiway C.
+[19:37:15] CAM-1: Long landing. Reverse!
+[19:37:18] CAM: [sound of thrust reversers deploying]
+[19:37:22] CAM-2: Brake pressure low.
+[19:37:25] CAM-1: We’re not stopping.
+[19:37:28] CAM-2: End of runway!
+[19:37:30] CAM-1: Brace!
+[19:37:32] CAM: [sound of impact]
+[end of recording]
       </pre>
     </section>
   </main>
 
-  <!-- Universal Nav Loader & Dynamic Title Script -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       fetch('/navigation/nav.html')
         .then(r => r.text())
         .then(html => {
           document.getElementById('nav-placeholder').innerHTML = html;
-
           const full = document.title.trim();
           const shortTitle = full.includes(' – ')
             ? full.split(' – ')[0]
             : full;
-
           const titleEl = document.getElementById('nav-page-title');
           if (titleEl) titleEl.textContent = shortTitle;
         })
         .catch(e => console.error('❌ nav load error:', e));
     });
   </script>
-  <!-- End Nav Loader -->
 
   <footer>
     <div class="sources">
       📋 Sources:
       <a
-        href="https://tailstrike.com/database/23-june-1985-air-india-182/"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Tailstrike CVR Archive</a
+        href="https://tailstrike.com/database/07-august-2020-air-india-express-1344/"
+        target="_blank" rel="noopener noreferrer"
+        >Tailstrike CVR Archive – Flight 1344</a
       >,
       <a
-        href="https://mail.aviation-safety.net/investigation/transcripts/cvr_ai182.php"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Aviation Safety Network – Full Transcript</a
+        href="https://timesofindia.indiatimes.com/india/air-india-express-1344-aaib-report"
+        target="_blank" rel="noopener noreferrer"
+        >Times of India – AAIB Final Report</a
       >,
       <a
-        href="https://en.wikipedia.org/wiki/Air_India_Flight_182"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Wikipedia – Air India Flight 182</a
+        href="https://en.wikipedia.org/wiki/Air_India_Express_Flight_1344"
+        target="_blank" rel="noopener noreferrer"
+        >Wikipedia – Air India Express Flight 1344</a
       >
     </div>
     <p>
