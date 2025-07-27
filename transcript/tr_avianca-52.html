@@ -32,6 +32,19 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="/css/styles.css">
+  
+  <script>
+    fetch('/navigation/nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('nav-placeholder').innerHTML = html;
+        const centerTitle = document.getElementById('nav-page-title');
+        if (centerTitle) {
+          centerTitle.textContent = document.title.split(' – ')[0];
+        }
+      })
+      .catch(err => console.error('❌ nav load error:', err));
+  </script>
 </head>
 <body>
   <!-- Google Tag Manager (NoScript) -->
@@ -70,4 +83,45 @@
 [21:03:56] CAM-3: Go-around procedure states power be applied slowly, avoid rapid accelerations, maintain minimum nose-up attitude.
 [21:04:10] CAM-2: Minimum nose-up attitude means the least nose-up you can hold.
 [21:04:27] CAM-3: Flaps to 25, maintain Vref + 20...
-[21:04:34] CAM-3: Retract landing gear with positive
+[21:04:34] CAM-3: Retract landing gear with positive rate of climb.
+[21:04:50] APPR: Avianca zero five two heavy, continue approach runway four right.
+[21:05:02] CAM-1: Mayday, Mayday, Mayday. Fuel emergency, we’re going down.
+[21:05:08] CAM-2: We’re out of fuel, descending through two thousand.
+[21:05:15] RDO: Avianca zero five two heavy, say intentions.
+[21:05:18] CAM-1: Can’t maintain any altitude, Mayday.
+[21:05:22] CAM-2: Aircraft shaking, gear status uncertain.
+[21:05:28] CAM-1: Brace for impact!
+[end of recording]
+      </pre>
+    </section>
+
+    <section class="sources">
+      <h3>Sources</h3>
+      <ul>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/Avianca_Flight_52"
+            target="_blank" rel="noopener noreferrer"
+          >Wikipedia – Avianca Flight 52</a>
+        </li>
+        <li>
+          <a
+            href="https://www.ntsb.gov/investigations/AccidentReports/Reports/AAR90-03.pdf"
+            target="_blank" rel="noopener noreferrer"
+          >NTSB AAR-90-03 Final Report</a>
+        </li>
+        <li>
+          <a
+            href="https://aviation-safety.net/database/record.php?id=19900125-0"
+            target="_blank" rel="noopener noreferrer"
+          >ASN Database Record</a>
+        </li>
+      </ul>
+    </section>
+
+    <p class="back-link">
+      <a href="../index.html">&larr; Back to Crash Archive</a>
+    </p>
+  </main>
+</body>
+</html>
