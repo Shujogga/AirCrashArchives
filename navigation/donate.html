@@ -13,6 +13,9 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="/css/styles.css" />
+  <script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAVdsMfFDjlku0-moqSwIHVkL-q93R_3vevSNzC_TBFKfAmgx5dmkAJxyf08Ld68MpI8QowM0XnOzOhto&components=hosted-buttons&disable-funding=venmo&currency=USD">
+</script>
 </head>
 <body>
   <!-- Navigation bar placeholder -->
@@ -37,14 +40,14 @@
     <section>
       <h2>Other Ways to Support</h2>
       <p>You can also donate securely using PayPal:</p>
-      <a
-        href="https://paypal.me/shujogga"
-        class="donate-button"
-        target="_blank"
-        rel="noopener"
-      >
-        Donate via PayPal
-      </a>
+<div id="paypal-container-6UERC2TP6SFD2"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "6UERC2TP6SFD2",
+  }).render("#paypal-container-6UERC2TP6SFD2")
+</script>
+
+      
     </section>
   </main>
 
