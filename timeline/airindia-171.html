@@ -1,149 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Air India Flight 171 – Ahmedabad Crash</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
 
-  <!-- Primary Meta Tags -->
-  <title>Air India Flight 171 CVR Transcript & Analysis | Full Cockpit Audio</title>
-  <meta name="description"
-        content="Full CVR transcript & cockpit voice analysis of Air India Flight 171 crash on June 12, 2025. Learn the key radio calls & findings.">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type"        content="article">
-  <meta property="og:url"         content="https://aircrasharchive.com/flight/171/transcript.html">
-  <meta property="og:title"       content="Air India Flight 171 CVR Transcript & Cockpit Analysis">
-  <meta property="og:description" content="Explore the cockpit audio, timeline, and investigation highlights from AI-171’s tragic crash.">
-  <meta property="og:image"       content="https://aircrasharchive.com/images/ai171-graphic.jpg">
-
-  <!-- Twitter -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Air India Flight 171 CVR Transcript & Analysis">
-  <meta name="twitter:description" content="Full cockpit voice recording transcript and analysis of AI-171 crash.">
-  <meta name="twitter:image"       content="https://aircrasharchive.com/images/ai171-graphic.jpg">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://aircrasharchive.com/flight/171/transcript.html">
-
-  <!-- Favicon -->
-  <link rel="icon" href="/flight.ico" type="image/x-icon">
-
-  <!-- Google Tag Manager -->
-  <script defer>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'? '&l='+l : '';j.async=true;
-    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-    f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','G-VSXP6DP1CQ');
-  </script>
-
-  <!-- Fonts & Styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
-
-  <!-- JSON-LD Transcript Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Transcript",
-    "headline": "Air India Flight 171 Cockpit Voice Recorder Transcript",
-    "datePublished": "2025-06-12",
-    "transcriptLanguage": "en",
-    "about": {
-      "@type": "Flight",
-      "flightNumber": "AI 171",
-      "aircraft": "Boeing 787-8 Dreamliner",
-      "operator": "Air India"
-    }
-  }
+  <script>
+    fetch('/navigation/nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('nav-placeholder').innerHTML = html;
+        const centerTitle = document.getElementById('nav-page-title');
+        if (centerTitle) {
+          centerTitle.textContent = document.title.split(' – ')[0];
+        }
+      })
+      .catch(err => console.error('❌ nav load error:', err));
   </script>
 </head>
 <body>
+  <div id="nav-placeholder"></div>
 
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=G-VSXP6DP1CQ"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
+  <main class="content">
+    <h2>Air India Flight 171 – Ahmedabad Crash</h2>
+    <p><strong>Date of Incident:</strong> June 12, 2025</p>
+    <p><strong>Location:</strong> B.J. Medical College, Ahmedabad, India</p>
 
-  <header>
-    <div id="nav-placeholder"></div>
-  </header>
-
-  <main>
-    <h1>Air India Flight 171 – CVR Transcript</h1>
-
-    <section aria-labelledby="flight-metadata">
-      <h2 id="flight-metadata" class="visually-hidden">Flight Details</h2>
-      <dl class="flight-meta">
-        <dt>Date:</dt>
-        <dd>June 12, 2025</dd>
-        <dt>Aircraft:</dt>
-        <dd>Boeing 787-8 Dreamliner (VT-AXU)</dd>
-        <dt>Operator:</dt>
-        <dd>Air India</dd>
-        <dt>Fatalities:</dt>
-        <dd>260 (241 onboard + 19 on ground)</dd>
-        <dt>Cause:</dt>
-        <dd>Dual engine shutdown due to fuel switch cutoff shortly after takeoff</dd>
-      </dl>
+    <section class="overview">
+      <h3>🧭 What Happened</h3>
+      <p>Flight AI-171 was a scheduled international service from Ahmedabad to London Gatwick. Just 32 seconds after takeoff, the Boeing 787-8 Dreamliner lost thrust in both engines and crashed into a densely populated college campus. Of the 242 onboard, 241 perished, along with 19 fatalities on the ground. The sole survivor was seated near an emergency exit that detached during impact.</p>
     </section>
 
-    <section aria-label="Cockpit Voice Recorder Transcript">
-      <pre class="transcript">
-[13:38:42] CAM-1: Fuel switch one... wait, what?
-[13:38:43] CAM-2: Why did you cut off?
-[13:38:44] CAM-1: I didn’t.
-[13:38:46] CAM-2: Both engines are dropping.
-[13:38:48] CAM-1: Restart sequence—go!
-[13:38:50] CAM-2: Engine one—ignition. Engine two—no response.
-[13:38:54] CAM-1: RAT deployed.
-[13:38:56] CAM-2: Altitude falling. We’re below 700 feet.
-[13:38:58] CAM-1: Mayday, Mayday, Mayday—Air India 171, dual engine failure.
-[13:39:02] ATC: Air India 171, cleared to land any runway.
-[13:39:05] CAM-2: We’re not going to make it.
-[13:39:07] CAM-1: Try engine two again.
-[13:39:09] CAM-2: Still dead.
-[13:39:11] CAM-1: Brace.
-[13:39:13] CAM: [sound of impact]
-[end of recording]
-      </pre>
+    <section class="aircraft">
+      <h3>✈️ Aircraft Details</h3>
+      <p><strong>Flight Number:</strong> AI-171</p>
+      <p><strong>Aircraft Type:</strong> Boeing 787-8 Dreamliner</p>
+      <p><strong>Registration:</strong> VT-ANB</p>
+      <p><strong>Departure:</strong> Ahmedabad Airport (AMD)</p>
+      <p><strong>Destination:</strong> London Gatwick Airport (LGW)</p>
+      <p><strong>Fatalities:</strong> 260 (241 onboard + 19 ground)</p>
+      <p><strong>Survivors:</strong> 1</p>
     </section>
 
-    <script defer>
-      fetch('/navigation/nav.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('nav-placeholder').innerHTML = html;
-          const centerTitle = document.getElementById('nav-page-title');
-          if (centerTitle) {
-            centerTitle.textContent = document.title.split(' | ')[0];
-          }
-        })
-        .catch(err => console.error('❌ nav load error:', err));
-    </script>
+    <section class="intel">
+      <h3>🔍 Key Factors</h3>
+      <p>Both engine fuel control switches transitioned from RUN to CUTOFF within one second of each other, causing immediate loss of thrust. The Ram Air Turbine (RAT) deployed, and the crew attempted to restart both engines. Engine 1 showed signs of recovery, but Engine 2 failed to regain thrust. The aircraft was too low and slow to recover.</p>
+    </section>
+
+    <section class="story-block">
+      <h3>📆 Timeline of Events</h3>
+      <ul>
+        <li><strong>08:07:33 UTC</strong> – Cleared for takeoff from Runway 23</li>
+        <li><strong>08:08:39 UTC</strong> – Liftoff confirmed</li>
+        <li><strong>08:08:42 UTC</strong> – Aircraft reaches 180 knots; both fuel switches move to CUTOFF</li>
+        <li><strong>08:08:52 UTC</strong> – Engine 1 fuel switch reset to RUN</li>
+        <li><strong>08:08:56 UTC</strong> – Engine 2 fuel switch reset to RUN</li>
+        <li><strong>08:09:05 UTC</strong> – “MAYDAY MAYDAY MAYDAY” transmitted</li>
+        <li><strong>08:09:11 UTC</strong> – Final data recorded; aircraft crashes into college campus</li>
+      </ul>
+    </section>
+
+    <section class="cvrs">
+      <h3>🎙️ Cockpit Voice & Flight Data</h3>
+      <blockquote>“Why did you cut off?” — One pilot</blockquote>
+      <blockquote>“I didn’t do it.” — Other pilot</blockquote>
+      <p>The CVR captured a brief exchange indicating confusion over the fuel cutoff. The switches were later found in the RUN position at the crash site. The CVR and FDR were recovered and analyzed by AAIB India and NTSB USA.</p>
+      <p><a href="/transcript/tr_ai171.html" target="_blank">📄 Read the Full CVR Transcript</a></p>
+    </section>
+
+    <section class="tech">
+      <h3>⚙️ Aircraft Systems & Failures</h3>
+      <ul>
+        <li>Fuel switches moved to CUTOFF manually or via unknown electrical signal</li>
+        <li>RAT deployed automatically after engine shutdown</li>
+        <li>APU auto-started but failed to restore full power</li>
+        <li>Engine 2 failed to recover despite relight attempts</li>
+      </ul>
+    </section>
+
+    <section class="aftermath">
+      <h3>🛡️ Aftermath and Reforms</h3>
+      <ul>
+        <li>AAIB India launched full investigation with international support</li>
+        <li>DGCA ordered fleet-wide inspections of fuel switch locking mechanisms</li>
+        <li>Tata Group established ₹1 crore ex-gratia trust per victim</li>
+        <li>Flight number AI-171 retired from service</li>
+      </ul>
+    </section>
+
+    <section class="sources">
+      <h3>📋 Sources</h3>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Air_India_Flight_171" target="_blank">Wikipedia – Flight 171</a></li>
+        <li><a href="https://www.hindustantimes.com/india-news/engines-shut-down-cockpit-confusion-read-full-aaib-report-on-air-india-crash-101752289732833.html" target="_blank">Hindustan Times – AAIB Report</a></li>
+        <li><a href="https://www.airindia.com/in/en/newsroom/press-release/AI171.html" target="_blank">Air India Newsroom – AI171 Updates</a></li>
+      </ul>
+    </section>
   </main>
-
-  <footer>
-    <div class="sources">
-      📋 Sources:
-      <a href="https://www.newindianexpress.com/editorials/2025/Jul/14/release-full-transcript-of-of-ai-flight-171s-audio-recording-immediately"
-         target="_blank" rel="noopener">
-        New Indian Express editorial
-      </a>,
-      <a href="https://english.mathrubhumi.com/news/india/air-india-flight-171-cockpit-fuel-switch-crash-mystery-e1uh7rpd"
-         target="_blank" rel="noopener">
-        Mathrubhumi News
-      </a>,
-      <a href="https://www.hindustantimes.com/india-news/engines-shut-down-cockpit-confusion-read-full-aaib-report-on-air-india-crash-101752289732833.html"
-         target="_blank" rel="noopener">
-        Hindustan Times – AAIB Report
-      </a>
-    </div>
-    <p><a class="back-link" href="../index.html">&larr; Back to Crash Archive</a></p>
-  </footer>
-
 </body>
 </html>

@@ -36,6 +36,8 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+
+
 /* ------------------------------------------------
    2. Navigation Bar
 --------------------------------------------------- */
@@ -300,6 +302,7 @@ h2 {
 .donate-button:hover {
   background: #227799;
 }
+
 
 /* ------------------------------------------------
    8. Mobile Overrides
