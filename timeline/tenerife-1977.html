@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tenerife 1977 – Runway Collision Disaster</title>
+  <title>Tenerife 1977 Runway Disaster </title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/styles.css" />
 
@@ -14,7 +13,7 @@
       .then(res => res.text())
       .then(html => {
         document.getElementById('nav-placeholder').innerHTML = html;
-        const centerTitle = = document.getElementById('nav-page-title');
+        const centerTitle = document.getElementById('nav-page-title');
         if (centerTitle) {
           centerTitle.textContent = document.title.split(' – ')[0];
         }
@@ -24,6 +23,7 @@
 </head>
 <body>
   <div id="nav-placeholder"></div>
+
 
   <main class="content">
     <h2>Tenerife 1977 – Runway Collision Disaster</h2>
