@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" href="/flight.ico" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tasmania Missing Small Plane – Search Ongoing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script>
+    fetch('/navigation/nav.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('nav-placeholder').innerHTML = html;
+        const centerTitle = document.getElementById('nav-page-title');
+        if (centerTitle) {
+          centerTitle.textContent = document.title.split(' – ')[0];
+        }
+      })
+      .catch(err => console.error('❌ nav load error:', err));
+  </script>
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <main class="content">
+    <h2>Tasmania Missing Small Plane – Search Ongoing</h2>
+    <p><strong>Date of Incident:</strong> August 5, 2025</p>
+    <p><strong>Flight Path:</strong> George Town Airport (Tasmania) to Hillston Airport (NSW) via Leongatha (Victoria); last radar near Lake Barrington</p>
+
+    <section class="overview">
+      <h3>🧭 What Happened</h3>
+      <p>A bright green two-seater light aircraft carrying a man in his 70s, his wife in her 60s and their dog departed George Town Airport at 12:45 AEST bound for Hillston via Leongatha. No scheduled position report or mayday call was ever made, and radar contact was lost over Bass Strait.</p>
+    </section>
+
+    <section class="aircraft">
+      <h3>✈️ Aircraft Details</h3>
+      <p><strong>Type/Model:</strong> Bright green two-seater light aircraft (make/model not disclosed)</p>
+      <p><strong>Registration:</strong> Not released</p>
+      <p><strong>Occupants:</strong> 3 (pilot, passenger, dog)</p>
+      <p><strong>Pilot Experience:</strong> Very experienced; aircraft owned for 3–4 months</p>
+    </section>
+
+    <section class="intel">
+      <h3>🔍 Key Factors</h3>
+      <ul>
+        <li>No radio, ELT or EPIRB distress signal received</li>
+        <li>Mandatory pre-flight contact with AMSA was not made; under investigation whether aircraft disappeared before reporting point</li>
+        <li>Intermittent low cloud and haze over Bass Strait hampered visibility</li>
+        <li>Family raised the alarm at 17:00 AEST when the flight failed to arrive</li>
+      </ul>
+    </section>
+
+    <section class="story-block">
+      <h3>📆 Timeline of Events</h3>
+      <ul>
+        <li><strong>12:45 AEST (Sat)</strong> – Takeoff from George Town Airport</li>
+        <li><strong>13:00 AEST</strong> – Scheduled position call due; no response</li>
+        <li><strong>13:10 AEST</strong> – Last radar return near Lake Barrington</li>
+        <li><strong>17:00 AEST</strong> – Family reports missing after failure to arrive</li>
+        <li><strong>18:00 AEST</strong> – AMSA launches large-scale search</li>
+      </ul>
+    </section>
+
+    <section class="search">
+      <h3>🛰️ Search Efforts</h3>
+      <ul>
+        <li>AMSA coordinating Challenger jet, two fixed-wing aircraft and multiple vessels</li>
+        <li>Tasmania Police helicopter and local volunteer SAR teams deployed</li>
+        <li>Extensive search across northern Tasmania, Bass Strait and southern Victoria</li>
+        <li>Search continuing through night and resumed at 08:00 AEST</li>
+        <li>Public urged to watch coastlines, open water and report any sightings</li>
+      </ul>
+    </section>
+
+    <section class="statement">
+      <h3>👮 Police Statement</h3>
+      <p>"We remain optimistic at this stage and we are still hopeful for a very positive outcome," said Tasmania Police Northern Commander Marco Ghedini. "As these events unfold, it becomes a concern when we haven't located an aircraft or persons or debris, but we do remain hopeful."</p>
+    </section>
+
+    <section class="transcript">
+      <h3>🎙️ Communications & Flight Data</h3>
+      <p>No cockpit voice recorder fitted; only routine ATC checks were logged until radar loss. EPIRB onboard must be manually activated to send a distress beacon.</p>
+      <p><a href="/transcript/tr_tasmania-missing-small-plane.html" target="_blank">📄 View Related Communications Log</a></p>
+    </section>
+
+    <section class="investigation">
+      <h3>🔎 Investigation Status</h3>
+      <p>Authorities are examining whether the aircraft disappeared before the mandatory reporting point and investigating the failure to notify AMSA prior to departure.</p>
+    </section>
+
+    <section class="sources">
+      <h3>📋 Sources</h3>
+      <ul>
+
+        <li><a href="https://www.amsa.gov.au/search-and-rescue" target="_blank">AMSA – Search & Rescue Operations</a></li>
+  </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
